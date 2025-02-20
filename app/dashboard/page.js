@@ -17,12 +17,12 @@ const Dashboard = ({ tasks }) => {
       <div className="overflow-x-auto">
         <table className="w-full border border-gray-200 rounded-lg overflow-hidden">
           <thead>
-            <tr className="bg-gray-100 text-gray-800 text-left">
-              <th className="border p-3">Task Title</th>
-              <th className="border p-3 w-1/3">Task Description</th>
-              <th className="border p-3">User Request Title</th>
-              <th className="border p-3">User Request Description</th>
-              <th className="border p-3">Date</th>
+            <tr className="bg-gray-100 text-primaryText text-left">
+              <th className="border p-3 align-top">Task Title</th>
+              <th className="border p-3 align-top w-1/3">Task Description</th>
+              <th className="border p-3 align-top">User Request Title</th>
+              <th className="border p-3 align-top">User Request Description</th>
+              <th className="border p-3 align-top">Date</th>
             </tr>
           </thead>
           <tbody>
@@ -36,7 +36,7 @@ const Dashboard = ({ tasks }) => {
               localTasks.map((task) => (
                 <tr
                   key={task.id}
-                  className="hover:bg-blue-50 transition text-wrap"
+                  className="hover:bg-blue-50 transition text-wrap text-sm text-secondaryText"
                 >
                   <td className="border p-3 font-semibold align-top">
                     {task.taskTitle}
